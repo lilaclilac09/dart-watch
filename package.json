@@ -1,0 +1,18 @@
+{
+  "name": "dart-watch",
+  "version": "0.1.0",
+  "description": "Live Titan DART quote monitor & swap API comparison",
+  "type": "module",
+  "scripts": {
+    "watch": "tsx src/watch.ts",
+    "scan": "tsx src/scan.ts",
+    "compare": "tsx src/compare.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.5"
+  }
+}
