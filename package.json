@@ -7,9 +7,11 @@
     "watch": "tsx src/watch.ts",
     "scan": "tsx src/scan.ts",
     "compare": "tsx src/compare.ts",
-    "panel": "tsx src/panel.ts"
+    "panel": "tsx src/panel.ts",
+    "agent": "tsx src/agent.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.97.1",
     "dotenv": "^16.4.5",
     "ws": "^8.20.1"
   },
