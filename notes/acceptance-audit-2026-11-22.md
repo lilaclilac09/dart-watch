@@ -13,4 +13,8 @@ Checked PR #1 and the CLI guide against [ACCEPTANCE.md](../ACCEPTANCE.md). The m
 
 **Limitations:** The CLI’s full live flow was not checked without configured vendor credentials.
 
+| blocked_on | evidence | impact | human_action | not_doing |
+|---|---|---|---|---|
+| Anthropic credential for the CLI | `npm run agent` exited 1 with `Missing ANTHROPIC_API_KEY in .env` | degraded — the local midpoint regression ran; the authenticated CLI did not start | Configure the Anthropic key in a local `.env` per `GUIDE.md` | Do not use a dummy key or present the midpoint regression as authenticated QA |
+
 **Status: LOCAL ONLY** — configure the keys in GUIDE.md and run `npm run agent`.
