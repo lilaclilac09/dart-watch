@@ -205,7 +205,7 @@ async function runTool(name: string, input: Record<string, unknown>): Promise<st
 
       const asks = [...book.asks].sort((a, b) => a[0] - b[0]).slice(0, depth);
       const bids = [...book.bids].sort((a, b) => b[0] - a[0]).slice(0, depth);
-      const mid  = phoenixMarkets[symbol]?.midPx ?? ((asks[0]?.[0] ?? 0 + bids[0]?.[0] ?? 0) / 2);
+      const mid  = phoenixMarkets[symbol]?.midPx ?? (((asks[0]?.[0] ?? 0) + (bids[0]?.[0] ?? 0)) / 2);
 
       const lines = [
         `Phoenix ${symbol}-PERP orderbook (top ${depth} levels)`,

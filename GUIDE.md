@@ -1,5 +1,7 @@
 # Building a Multi-Venue Solana Trading Agent with Claude
 
+**Status: LOCAL ONLY** — configure the keys below and run `npm run agent` to try the CLI.
+
 Use Claude as the reasoning brain. Titan DART, 0x, and Phoenix are the tools. You describe what you want in plain language — Claude fetches live data, compares venues, and explains the trade-offs before anything gets signed.
 
 ---
